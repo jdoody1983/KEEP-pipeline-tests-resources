@@ -10,7 +10,7 @@ spec:
       description: ibmcloud endpoint
   steps:
     - name: secrets-manager-test
-      image: ibmcom/pipeline-base-image:2.9
+      image: icr.io/continuous-delivery/pipeline/pipeline-base-image:2.9
       env:
         - name: SECRETS_MANAGER_APIKEY
           value: $(inputs.params.secrets-manager-apikey)
