@@ -10,7 +10,7 @@ spec:
       description: ibmcloud endpoint
   steps:
     - name: key-protect-test
-      image: ibmcom/pipeline-base-image:2.9
+      image: icr.io/continuous-delivery/pipeline/pipeline-base-image:2.9
       env:
         - name: KEY_PROTECT_APIKEY
           value: $(inputs.params.key-protect-apikey)
